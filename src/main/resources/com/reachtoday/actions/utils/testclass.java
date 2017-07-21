@@ -24,8 +24,8 @@ public class testclass {
 			// This will load the MySQL driver, each DB has its own driver
 			Class.forName("com.mysql.jdbc.Driver");
 			// Setup the connection with the DB
-			connect = DriverManager.getConnection("jdbc:mysql://192.168.2.195/reachtoday?"
-					+ "user=root&password=soft123");
+			connect = DriverManager.getConnection("jdbc:mysql://localhost/reachtoday?"
+					+ "user=root&password=Welcome@123");
 
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
