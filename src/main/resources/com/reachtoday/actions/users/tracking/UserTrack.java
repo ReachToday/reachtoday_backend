@@ -1,4 +1,4 @@
-package com.reachtoday.actions.userTracking;
+package com.reachtoday.actions.users.tracking;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -16,7 +16,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.reachtoday.actions.utils.DBUtils;
+import com.reachtoday.utils.DBUtils;
 
 
 /*User Tracking Service Operations*/

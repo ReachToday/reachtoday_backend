@@ -1,4 +1,4 @@
-package com.reachtoday.actions.utils;
+package com.reachtoday.actions.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import com.reachtoday.utils.DBUtils;
 
 /**
  * Servlet implementation class ListBuses

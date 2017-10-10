@@ -1,4 +1,4 @@
-package com.reachtoday.actions.utils;
+package com.reachtoday.actions.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,17 +12,19 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.reachtoday.utils.DBUtils;
+
 /**
  * Servlet implementation class ListBuses
  */
 
-public class Loginregister extends HttpServlet {
+public class Loginuser extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
   /**
    * @see HttpServlet#HttpServlet()
    */
-  public Loginregister() {
+  public Loginuser() {
     super();
     // TODO Auto-generated constructor stub
   }
@@ -88,19 +90,19 @@ public class Loginregister extends HttpServlet {
 
   private void close() {
     try {
-            if (resultSet != null) {
-                    resultSet.close();
-            }
+      if (resultSet != null) {
+        resultSet.close();
+      }
 
-            if (dbUtils != null) {
-              dbUtils.close();
-              dbUtils = null;
-            }
-          
+      if (dbUtils != null) {
+        dbUtils.close();
+        dbUtils = null;
+      }
+
     } catch (Exception e) {
 
     }
-}
+  }
 
   /**
    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
