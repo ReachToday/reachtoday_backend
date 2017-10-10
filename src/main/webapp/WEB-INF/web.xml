@@ -6,63 +6,63 @@
 
 	<servlet>
 		<servlet-name>Mysqlconnector</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Mysqlconnector</servlet-class>
+		<servlet-class>com.reachtoday.utils.Mysqlconnector</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>SendNumber</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.SendNumber</servlet-class>
+		<servlet-class>com.reachtoday.actions.vechicle.SendNumber</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>ListBuses</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.ListBuses</servlet-class>
+		<servlet-class>com.reachtoday.actions.vechicle.ListBuses</servlet-class>
 	</servlet>
 
 
 	<servlet>
 		<servlet-name>getdata</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.getdata</servlet-class>
+		<servlet-class>com.reachtoday.utils.getdata</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>login</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Loginregister</servlet-class>
+		<servlet-class>com.reachtoday.actions.login.Loginuser</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>register</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Registeruser</servlet-class>
+		<servlet-class>com.reachtoday.actions.login.Registeruser</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>searchuser</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Searchuser</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.Searchuser</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>searchfriend</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Searchfriend</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.friend.Searchfriend</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>sendfriendrequest</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.Sendfriendrequest</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.friend.Sendfriendrequest</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>friendnotification</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.friendnotification</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.friend.friendnotification</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>nodejscall</servlet-name>
-		<servlet-class>com.reachtoday.actions.utils.NodeJsCall</servlet-class>
+		<servlet-class>com.reachtoday.utils.NodeJsCall</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>TrackUser</servlet-name>
-		<servlet-class>com.reachtoday.actions.userTracking.UserTrack</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.tracking.UserTrack</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>UserLocationInsert</servlet-name>
-		<servlet-class>com.reachtoday.actions.userTracking.UserLocationAccess</servlet-class>
+		<servlet-class>com.reachtoday.actions.users.tracking.UserLocationAccess</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Mysqlconnector</servlet-name>

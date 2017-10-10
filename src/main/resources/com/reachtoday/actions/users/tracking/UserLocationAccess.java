@@ -1,12 +1,9 @@
-package com.reachtoday.actions.userTracking;
+package com.reachtoday.actions.users.tracking;
 
 import java.io.IOException;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,9 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
-import com.reachtoday.actions.utils.DBUtils;
+import com.reachtoday.utils.DBUtils;
 
 
 /*User location access and insert into db for tracking */

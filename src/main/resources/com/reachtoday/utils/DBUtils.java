@@ -1,4 +1,4 @@
-package com.reachtoday.actions.utils;
+package com.reachtoday.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,17 +16,17 @@ public class DBUtils {
 
   public DBUtils() throws ClassNotFoundException, SQLException {
     super();
+    // This will load the MySQL driver, each DB has its own driver
+    Class.forName("com.mysql.jdbc.Driver");
+    String url = "jdbc:mysql://localhost:3306/reachtoday";
+    String userName = "root";
+    String password = "Welcome@123";
+    // Setup the connection with the DB
+    connect = DriverManager.getConnection(url, userName, password);
   }
 
   public ResultSet executeQuery(String query) {
     try {
-      // This will load the MySQL driver, each DB has its own driver
-      Class.forName("com.mysql.jdbc.Driver");
-      String url = "jdbc:mysql://localhost:3306/reachtoday";
-      String userName = "root";
-      String password = "Welcome@123";
-      // Setup the connection with the DB
-      connect = DriverManager.getConnection(url, userName, password);
       // Statements allow to issue SQL queries to the database
       statement = connect.createStatement();
       resultSet = statement.executeQuery(query);
@@ -40,13 +40,6 @@ public class DBUtils {
 
   public Boolean executeinsert(String query) {
     try {
-      // This will load the MySQL driver, each DB has its own driver
-      Class.forName("com.mysql.jdbc.Driver");
-      String url = "jdbc:mysql://localhost:3306/reachtoday";
-      String userName = "root";
-      String password = "Welcome@123";
-      // Setup the connection with the DB
-      connect = DriverManager.getConnection(url, userName, password);
       // Statements allow to issue SQL queries to the database
       statement = connect.createStatement();
       status = statement.execute(query);

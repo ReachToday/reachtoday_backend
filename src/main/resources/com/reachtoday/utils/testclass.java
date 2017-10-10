@@ -1,4 +1,4 @@
-package com.reachtoday.actions.utils;
+package com.reachtoday.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
